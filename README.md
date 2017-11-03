@@ -1,26 +1,36 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is an Image Upload Application on [Ionic](http://ionicframework.com/docs/).
 
-## How to use this template
+## How to use this Application
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+To use this Application, you have to run this on your native devices, it can be android or IOS.
+1. Common gallery section to view pictures,
+2. Provition to capture new picture through device,
+3. Equipped with Image handleling utility.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+### How to start with the Ionic CLI:
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Dowload the codebase as zip file or pull the git
+navigate to the codebase root execute the command below command below:
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+$ npm install
+$ cd server
+$ npm install
+$ mkdir uploads
 ```
 
-Then, to run it, cd into `myBlank` and run:
+Then, to run `server`, cd into `server` and run:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ npm start
 ```
 
-Substitute ios for android if not on a Mac.
+Then, to run `Client`, run:
 
+```bash
+$ ionic cordova platform add android
+$ ionic cordova run android
+```
+
+Note: Your system must be equipped with Android enviourment [Android-Sdk](https://developer.android.com/studio/command-line/sdkmanager.html)
